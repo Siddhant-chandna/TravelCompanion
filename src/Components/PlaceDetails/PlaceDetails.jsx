@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PlaceHolder = () =>{
+const PlaceDetails = ({place}) =>{
     return(
-        <h1>PlaceHolder</h1>
+        <h1>{place.name}</h1>
     );
 }
 
-export default PlaceHolder;
+export default PlaceDetails;
