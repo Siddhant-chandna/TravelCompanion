@@ -11,10 +11,10 @@ function App() {
     <Header/>
     <Grid container spacing={0} style={{ width:'100%'}}>
        <Grid items xs={12} md={4}>
-            <List/>
+            <List />
        </Grid>
        <Grid items xs={12} md={8}>
-            <Map/>
+            <Map />
        </Grid>
     </Grid>
     </>
