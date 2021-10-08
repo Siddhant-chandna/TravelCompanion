@@ -2,7 +2,7 @@ import React from 'react';
 import { Autocomplete } from '@material-ui/lab';
 import { AppBar,Toolbar,Typography,InputBase,Box } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import useStlyes from './style';
+import useStlyes from './style.js';
 const Header = () =>{
     const classes=useStlyes();
     return(
@@ -13,7 +13,7 @@ const Header = () =>{
                 </Typography>
                 <Box display="flex">
                 <Typography varient="h6" className={classes.title}>
-                     {/* Explore New Places */}
+                     Explore New Places
                 </Typography>
                 {/* <Autocomplete> */}
                     <div className={classes.search}>

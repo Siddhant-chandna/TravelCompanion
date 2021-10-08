@@ -1,25 +1,14 @@
 import React,{useState} from 'react';
 import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
-import Liststyle from'./style'
+import Liststyle from'./style.js'
 import { PlayCircleFilledOutlined } from '@material-ui/icons';
 
-const List = () =>{
+const List = ({places}) =>{
     const classes=Liststyle();
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('0');
 
-    const places=[
-        {name:'Cool Place'},
-        {name:'Best Park'},
-        {name:'Best Burger'},
-        {name:'Cool Place'},
-        {name:'Best Park'},
-        {name:'Best Burger'},
-        {name:'Cool Place'},
-        {name:'Best Park'},
-        {name:'Best Burger'},
-    ]
     return(
         <div className={classes.container}>
             <Typography varient='h3'>Restaurants,Hotels & Attractions around you</Typography>
