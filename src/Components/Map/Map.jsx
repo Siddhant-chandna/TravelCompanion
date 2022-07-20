@@ -17,7 +17,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
         bootstrapURLKeys={{ key: 'AIzaSyBaEcp3QZAAxwqIpe99bfkIcgDv64yVFWs' }}
         defaultCenter={coords}
         center={coords}
-        defaultZoom={14}
+        defaultZoom={15}
         margin={[50, 50, 50, 50]}
         options={{ disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
         onChange={(e) => {
@@ -40,7 +40,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
                   <Typography className={classes.typography} variant="subtitle2" gutterBottom> {place.name}</Typography>
                   <img
                     className={classes.pointer}
-                    src={place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'}
+                    src={place.photo ? place.photo.images.large.url : 'https://img.freepik.com/premium-photo/cozy-restaurant-with-people-waiter_175935-230.jpg?w=2000'}
                   />
                   <Rating name="read-only" size="small" value={Number(place.rating)} readOnly />
                 </Paper>
