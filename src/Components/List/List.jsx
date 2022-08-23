@@ -14,7 +14,7 @@ const List = ({ places, type, setType, rating, setRating, childClicked, isLoadin
 
   return (
     <div className={classes.container}>
-      <Typography variant="h5" style={{color: 'red'}}>Find Food,Hotels & Attractions arounf you :)</Typography>
+      <Typography variant="h6" style={{color: 'red'}}>Find Food,Hotels & Attractions around you :)</Typography>
       {isLoading ? (
         <div className={classes.loading}>
           <CircularProgress size="5rem" />
